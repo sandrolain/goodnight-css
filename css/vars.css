@@ -1,0 +1,42 @@
+:root {
+  --neutral-color-hue: 240;
+  --neutral-color-sat: 10%;
+  --neutral-color-000: black;
+  --neutral-color-100: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 10%);
+  --neutral-color-200: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 20%);
+  --neutral-color-300: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 30%);
+  --neutral-color-400: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 40%);
+  --neutral-color-500: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 50%);
+  --neutral-color-600: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 60%);
+  --neutral-color-700: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 70%);
+  --neutral-color-800: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 80%);
+  --neutral-color-900: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 90%);
+  --neutral-color-999: white;
+  
+  --primary-color-hue: 240;
+  --primary-color-sat: 100%;
+  --primary-color-100: hsl(var(--primary-color-hue), var(--primary-color-sat), 10%);
+  --primary-color-200: hsl(var(--primary-color-hue), var(--primary-color-sat), 20%);
+  --primary-color-300: hsl(var(--primary-color-hue), var(--primary-color-sat), 30%);
+  --primary-color-400: hsl(var(--primary-color-hue), var(--primary-color-sat), 40%);
+  --primary-color-500: hsl(var(--primary-color-hue), var(--primary-color-sat), 50%);
+  --primary-color-600: hsl(var(--primary-color-hue), var(--primary-color-sat), 60%);
+  --primary-color-700: hsl(var(--primary-color-hue), var(--primary-color-sat), 70%);
+  --primary-color-800: hsl(var(--primary-color-hue), var(--primary-color-sat), 80%);
+  --primary-color-900: hsl(var(--primary-color-hue), var(--primary-color-sat), 90%);
+  
+  --accent-color-hue: 320;
+  --accent-color-sat: 100%;
+  --accent-color-100: hsl(var(--accent-color-hue), var(--accent-color-sat), 10%);
+  --accent-color-200: hsl(var(--accent-color-hue), var(--accent-color-sat), 20%);
+  --accent-color-300: hsl(var(--accent-color-hue), var(--accent-color-sat), 30%);
+  --accent-color-400: hsl(var(--accent-color-hue), var(--accent-color-sat), 40%);
+  --accent-color-500: hsl(var(--accent-color-hue), var(--accent-color-sat), 50%);
+  --accent-color-600: hsl(var(--accent-color-hue), var(--accent-color-sat), 60%);
+  --accent-color-700: hsl(var(--accent-color-hue), var(--accent-color-sat), 70%);
+  --accent-color-800: hsl(var(--accent-color-hue), var(--accent-color-sat), 80%);
+  --accent-color-900: hsl(var(--accent-color-hue), var(--accent-color-sat), 90%);
+  
+  --base-font-size: 12px;
+  --base-line-height: calc(16em / 12);
+}

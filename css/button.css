@@ -1,0 +1,24 @@
+:root {
+  --button-padding: 1em 1.5em;
+  --button-border: 1px;
+  --button-normal-color: var(--primary-color-500);
+  --button-hover-color: var(--primary-color-600);
+  --button-active-color: var(--primary-color-700);
+  --button-text-color: var(--neutral-color-999);
+}
+
+.btn {
+  padding: var(--button-padding);
+  border: var(--button-border) solid var(--button-normal-color);
+  background-color: var(--button-normal-color);
+  line-height: 1em;
+  color: var(--button-text-color);
+}
+.btn:hover {
+  border-color: var(--button-hover-color);
+  background-color: var(--button-hover-color);
+}
+.btn:active {
+  border-color: var(--button-active-color);
+  background-color: var(--button-active-color);
+}
