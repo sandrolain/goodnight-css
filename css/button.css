@@ -1,18 +1,22 @@
 :root {
-  --button-padding: 1em 1.5em;
+  --button-y-padding: 0.75em;
+  --button-x-padding: 1.25em;
   --button-border: 1px;
-  --button-normal-color: var(--primary-color-500);
+  --button-normal-color: var(--primary-color-400);
   --button-hover-color: var(--primary-color-600);
-  --button-active-color: var(--primary-color-700);
+  --button-active-color: var(--primary-color-800);
   --button-text-color: var(--neutral-color-999);
+  --button-screen-color: var(--primary-color-950);
 }
 
 .btn {
-  padding: var(--button-padding);
+  display: inline-block;
+  padding: var(--button-y-padding) var(--button-x-padding);
   border: var(--button-border) solid var(--button-normal-color);
   background-color: var(--button-normal-color);
   line-height: 1em;
   color: var(--button-text-color);
+  text-align: center;
 }
 .btn:hover {
   border-color: var(--button-hover-color);
@@ -22,3 +26,62 @@
   border-color: var(--button-active-color);
   background-color: var(--button-active-color);
 }
+
+.btn-icon {
+  width: calc(1em + (var(--button-y-padding) * 2));
+  padding: var(--button-y-padding) 0;
+}
+
+.btn.accent {
+  --button-normal-color: var(--accent-color-400);
+  --button-hover-color: var(--accent-color-600);
+  --button-active-color: var(--accent-color-800);
+  --button-text-color: var(--accent-color-999);
+  --button-screen-color: var(--accent-color-950);
+}
+
+.btn.critical {
+  --button-normal-color: var(--critical-color-400);
+  --button-hover-color: var(--critical-color-600);
+  --button-active-color: var(--critical-color-800);
+  --button-text-color: var(--critical-color-999);
+  --button-screen-color: var(--critical-color-950);
+}
+
+.btn.confirm {
+  --button-normal-color: var(--confirm-color-400);
+  --button-hover-color: var(--confirm-color-600);
+  --button-active-color: var(--confirm-color-800);
+  --button-text-color: var(--confirm-color-999);
+  --button-screen-color: var(--confirm-color-950);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--button-normal-color);
+}
+.btn-outline:hover {
+  background-color: var(--button-screen-color);
+  color: var(--button-hover-color);
+}
+.btn-outline:active {
+  background-color: var(--button-screen-color);
+  color: var(--button-active-color);
+}
+
+.btn-flat {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--button-normal-color);
+}
+.btn-flat:hover {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-hover-color);
+}
+.btn-flat:active {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-active-color);
+}
+

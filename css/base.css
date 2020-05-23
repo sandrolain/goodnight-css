@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--base-font-sise);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-sise: inherit;
+  line-height: var(--base-line-height);
+  background-color: var(--body-bg-color);
+  font-weight: 400;
+  color: var(--base-text-color);
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {font-size: 3.157em;}
+
+h3 {font-size: 2.369em;}
+
+h4 {font-size: 1.777em;}
+
+h5 {font-size: 1.333em;}
+
+small, .txt-sm {font-size: 0.75em;}
