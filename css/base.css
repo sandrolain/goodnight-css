@@ -46,3 +46,8 @@ h4 {font-size: 1.777em;}
 h5 {font-size: 1.333em;}
 
 small, .txt-sm {font-size: 0.75em;}
+
+
+*:focus {
+  outline: 1px dashed var(--primary-color-500);
+}
