@@ -36,7 +36,6 @@
   --button-normal-color: var(--accent-color-400);
   --button-hover-color: var(--accent-color-600);
   --button-active-color: var(--accent-color-800);
-  --button-text-color: var(--accent-color-999);
   --button-screen-color: var(--accent-color-950);
 }
 
@@ -44,7 +43,6 @@
   --button-normal-color: var(--critical-color-400);
   --button-hover-color: var(--critical-color-600);
   --button-active-color: var(--critical-color-800);
-  --button-text-color: var(--critical-color-999);
   --button-screen-color: var(--critical-color-950);
 }
 
@@ -52,7 +50,6 @@
   --button-normal-color: var(--confirm-color-400);
   --button-hover-color: var(--confirm-color-600);
   --button-active-color: var(--confirm-color-800);
-  --button-text-color: var(--confirm-color-999);
   --button-screen-color: var(--confirm-color-950);
 }
 
