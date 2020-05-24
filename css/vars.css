@@ -42,7 +42,7 @@
   --accent-color-900: hsl(var(--accent-color-hue), var(--accent-color-sat), 90%);
   --accent-color-950: hsl(var(--accent-color-hue), var(--accent-color-sat), 95%);
   
-  --critical-color-hue: 20;
+  --critical-color-hue: 10;
   --critical-color-sat: 100%;
   --critical-color-100: hsl(var(--critical-color-hue), var(--critical-color-sat), 10%);
   --critical-color-200: hsl(var(--critical-color-hue), var(--critical-color-sat), 20%);

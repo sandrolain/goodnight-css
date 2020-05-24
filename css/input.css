@@ -1,0 +1,36 @@
+:root {
+  --input-line-height: 1em;
+  --input-y-padding: 0.75em;
+  --input-x-padding: 1.25em;
+  --input-border-width: 1px;
+  --input-normal-color: var(--neutral-color-400);
+  --input-focus-color: var(--primary-color-600);
+  --input-text-color: var(--neutral-color-000);
+  --input-bg-color: var(--neutral-color-999);
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  -webkit-appearance: none;
+  line-height: var(--input-line-height);
+  padding: var(--input-y-padding) var(--input-x-padding);
+  background-color: var(--input-bg-color);
+  background-image: none;
+  border: var(--input-border-width) solid var(--input-normal-color);
+  border-bottom-width: calc(var(--input-border-width) * 2);
+  padding-bottom: calc(var(--input-x-padding) - var(input-border-width));
+  color: var(--input-text-color);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus {
+  border-color: var(--input-focus-color);
+}
+
+input:invalid:not([type="checkbox"]):not([type="radio"]),
+input.invalid:not([type="checkbox"]):not([type="radio"]) {
+  --input-normal-color: var(--critical-color-400);
+  --input-focus-color: var(--critical-color-600);
+}
+
+

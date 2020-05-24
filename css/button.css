@@ -1,7 +1,8 @@
 :root {
+  --button-line-height: 1em;
   --button-y-padding: 0.75em;
   --button-x-padding: 1.25em;
-  --button-border: 1px;
+  --button-border-width: 1px;
   --button-normal-color: var(--primary-color-400);
   --button-hover-color: var(--primary-color-600);
   --button-active-color: var(--primary-color-800);
@@ -12,11 +13,12 @@
 .btn {
   display: inline-block;
   padding: var(--button-y-padding) var(--button-x-padding);
-  border: var(--button-border) solid var(--button-normal-color);
+  border: var(--button-border-width) solid var(--button-normal-color);
   background-color: var(--button-normal-color);
-  line-height: 1em;
+  line-height: var(--button-line-height);
   color: var(--button-text-color);
   text-align: center;
+  border-radius: 0;
 }
 .btn:hover {
   border-color: var(--button-hover-color);
@@ -28,9 +30,11 @@
 }
 
 .btn-icon {
-  width: calc(1em + (var(--button-y-padding) * 2));
+  width: calc(var(--button-line-height) + (var(--button-y-padding) * 2));
   padding: var(--button-y-padding) 0;
 }
+
+/* TODO: default neutral color, add primary class */
 
 .btn.accent {
   --button-normal-color: var(--accent-color-400);
