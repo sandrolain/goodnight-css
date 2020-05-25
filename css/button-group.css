@@ -1,0 +1,14 @@
+:root {
+  --button-group-gap: 2px;
+}
+
+.button-group {
+  display: inline-flex;
+  flex-direction: row;
+}
+.button-group > * {
+  margin-right: var(--button-group-gap);
+}
+.button-group > *:last-child {
+  margin-right: 0;
+}

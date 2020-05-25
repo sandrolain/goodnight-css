@@ -1,0 +1,18 @@
+.exp-input {
+  display: none !important;
+}
+.exp-label {
+  display: block;
+}
+.exp-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition-property: opacity, max-height;
+  transition-timing-function: var(--transition-easing);
+  transition-duration: var(--transition-time);
+}
+.exp-input:checked + .exp-label + .exp-content {
+  max-height: calc(100vh + 0px);;
+  opacity: 1;
+}

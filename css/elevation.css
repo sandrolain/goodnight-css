@@ -1,0 +1,11 @@
+:root {
+  --elevation-shadow-blur: 4;
+  --elevation-shadow-color: rgba(0, 0, 0, 0.5);
+  --elevation: 1;
+}
+
+.elevation {
+  box-shadow: 0 calc(var(--elevation) * 1px)
+    calc(var(--elevation) * var(--elevation) * 1px)
+    var(--elevation-shadow-color);
+}
