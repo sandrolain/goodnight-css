@@ -3,11 +3,11 @@
   --input-y-padding: 0.75em;
   --input-x-padding: 1.25em;
   --input-border-width: 1px;
-  --input-normal-color: var(--neutral-color-400);
+  --input-normal-color: var(--neutral-color-600);
   --input-focus-color: var(--primary-color-600);
   --input-text-color: var(--neutral-color-000);
-  --input-bg-color: var(--neutral-color-999);
-  --input-placeholder-color: var(--neutral-color-800);
+  --input-bg-color: var(--neutral-color-900);
+  --input-placeholder-color: var(--neutral-color-700);
 }
 
 input::placeholder,
@@ -23,9 +23,9 @@ textarea {
   padding: var(--input-y-padding) var(--input-x-padding);
   background-color: var(--input-bg-color);
   background-image: none;
-  border: var(--input-border-width) solid var(--input-normal-color);
-  border-top-width: calc(var(--input-border-width) * 2);
-  padding-top: calc(var(--input-x-padding) - var(input-border-width));
+  border: none;
+  border-bottom: var(--input-border-width) solid var(--input-normal-color);
+  padding-bottom: calc(var(--input-x-padding) - var(input-border-width));
   color: var(--input-text-color);
   border-radius: 0;
   box-shadow: none;

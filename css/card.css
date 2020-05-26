@@ -1,0 +1,27 @@
+:root {
+  --card-content-padding: 1.25em;
+  --card-hr-height: 1px;
+  --card-hr-color: var(--neutral-color-900);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  padding: var(--card-content-padding);
+}
+
+.card-hr {
+  display: block;
+  height: var(--card-hr-height);
+  margin: 0 calc(var(--card-content-padding) / 2);
+  background-color: var(--card-hr-color);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}

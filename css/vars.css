@@ -57,7 +57,7 @@
   
   --confirm-color-hue: 100;
   --confirm-color-sat: 60%;
-  --confirm-color-100: =hsl(var(--confirm-color-hue), var(--confirm-color-sat), 10%);
+  --confirm-color-100: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 10%);
   --confirm-color-200: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 20%);
   --confirm-color-300: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 30%);
   --confirm-color-400: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 40%);

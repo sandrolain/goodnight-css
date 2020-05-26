@@ -1,0 +1,8 @@
+:root {
+  --margined-margin: 1.25em;
+  --margined: 1;
+}
+
+.margined {
+  margin: calc(var(--margined-margin) * var(--margined));
+}
