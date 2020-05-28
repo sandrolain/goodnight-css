@@ -9,6 +9,7 @@
   --button-hover-color: var(--neutral-color-600);
   --button-active-color: var(--neutral-color-800);
   --button-screen-color: var(--neutral-color-950);
+  --button-border-radius: 2px;
 }
 
 .btn,
@@ -20,7 +21,7 @@
   line-height: var(--button-line-height);
   color: var(--button-text-color);
   text-align: center;
-  border-radius: 0;
+  border-radius: var(--button-border-radius);
   margin: 0;
 }
 .btn:hover {
@@ -68,6 +69,22 @@
   --button-hover-color: var(--confirm-color-600);
   --button-active-color: var(--confirm-color-800);
   --button-screen-color: var(--confirm-color-950);
+}
+
+.btn-light {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-hover-color);
+}
+.btn-light:hover {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-normal-color);
+}
+.btn-light:active {
+  background-color: var(--button-active-color);
+  border-color: var(--button-active-color);
+  color: var(--button-normal-color);
 }
 
 .btn-outline {

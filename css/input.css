@@ -3,11 +3,11 @@
   --input-y-padding: 0.75em;
   --input-x-padding: 1.25em;
   --input-border-width: 1px;
-  --input-normal-color: var(--neutral-color-600);
-  --input-focus-color: var(--primary-color-600);
+  --input-normal-color: var(--neutral-color-700);
+  --input-focus-color: var(--primary-color-700);
   --input-text-color: var(--neutral-color-000);
-  --input-bg-color: var(--neutral-color-900);
-  --input-placeholder-color: var(--neutral-color-700);
+  --input-bg-color: var(--neutral-color-950);
+  --input-placeholder-color: var(--neutral-color-600);
 }
 
 input::placeholder,
@@ -45,7 +45,7 @@ input:invalid:not([type="checkbox"]):not([type="radio"]),
 input.invalid:not([type="checkbox"]):not([type="radio"]),
 textarea:invalid,
 textarea.invalid {
-  --input-normal-color: var(--critical-color-400);
+  --input-normal-color: var(--critical-color-700);
   --input-focus-color: var(--critical-color-600);
 }
 
