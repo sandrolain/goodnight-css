@@ -1,3 +1,12 @@
+/* Base Styles */
+:root {
+  --base-font-family: Tahoma, Arial, sans-serif;
+  --base-font-size: 16px;
+  --base-line-height: 1.5em;
+  --base-text-color: var(--neutral-color-200);
+  --body-bg-color: var(--neutral-color-999);
+}
+
 * {
   box-sizing: border-box;
   font-size: inherit;
