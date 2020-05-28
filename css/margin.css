@@ -1,8 +1,10 @@
 :root {
   --margined-margin: 1.25em;
-  --margined: 1;
+  --margined-x: 1;
+  --margined-y: 1;
 }
 
 .margined {
-  margin: calc(var(--margined-margin) * var(--margined));
+  margin: calc(var(--margined-margin) * var(--margined-y))
+          calc(var(--margined-margin) * var(--margined-x))
 }

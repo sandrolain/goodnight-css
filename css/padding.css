@@ -1,0 +1,10 @@
+:root {
+  --padded-padding: 1.25em;
+  --padded-x: 1;
+  --padded-y: 1;
+}
+
+.padded {
+  padding: calc(var(--padded-padding) * var(--padded-y))
+           calc(var(--padded-padding) * var(--padded-x))
+}

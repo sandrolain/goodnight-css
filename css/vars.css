@@ -67,6 +67,18 @@
   --confirm-color-800: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 80%);
   --confirm-color-900: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 90%);
   --confirm-color-950: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 95%);
+  
+  --opacity-000: 0;
+  --opacity-100: 0;
+  --opacity-200: 0;
+  --opacity-300: 0;
+  --opacity-400: 0;
+  --opacity-500: 0;
+  --opacity-600: 0;
+  --opacity-700: 0;
+  --opacity-800: 0;
+  --opacity-900: 0;
+  --opacity-999: 1;
 }
 
 /* Base Styles */

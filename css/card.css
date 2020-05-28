@@ -1,5 +1,6 @@
 :root {
-  --card-content-padding: 1.25em;
+  --card-y-padding: 1.25em;
+  --card-x-padding: 2em;
   --card-hr-height: 1px;
   --card-hr-color: var(--neutral-color-900);
 }
@@ -10,18 +11,29 @@
 }
 
 .card-content {
-  padding: var(--card-content-padding);
+  padding: var(--card-y-padding) var(--card-x-padding);
 }
 
 .card-hr {
   display: block;
   height: var(--card-hr-height);
-  margin: 0 calc(var(--card-content-padding) / 2);
+  margin: 0 var(--card-x-padding);
   background-color: var(--card-hr-color);
+}
+
+.card-image {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .card-image img {
   width: 100%;
   height: auto;
   vertical-align: top;
+}
+
+.card-bar {
+  white-space: nowrap;
+  background-color: var(--neutral-color-950);
+  padding: var(--card-y-padding) var(--card-x-padding);
 }

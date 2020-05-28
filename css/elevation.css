@@ -1,6 +1,6 @@
 :root {
   --elevated-shadow-color: rgba(0, 0, 0, 0.3);
-  --elevated: 1;
+  --elevated: 2;
 }
 
 .elevated {
