@@ -15,7 +15,6 @@
   padding: var(--selectable-y-padding) var(--selectable-x-padding);
   align-items: center;
   position: relative;
-  font-size: 0.8em;
 }
 
 .selectable:hover {

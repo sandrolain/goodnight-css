@@ -58,6 +58,7 @@ input[type="radio"] {
   position: relative;
   width: calc(var(--input-y-padding) * 2);
   height: calc(var(--input-y-padding) * 2);
+  background-color: var(--input-bg-color);
 }
 
 input[type="checkbox"]:focus,
