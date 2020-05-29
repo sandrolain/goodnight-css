@@ -4,7 +4,8 @@
   --padded-y: 1;
 }
 
-.padded {
+.padded,
+[style*="padded"] {
   padding: calc(var(--padded-padding) * var(--padded-y))
            calc(var(--padded-padding) * var(--padded-x))
 }

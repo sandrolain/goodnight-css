@@ -3,7 +3,8 @@
   --elevated: 2;
 }
 
-.elevated {
+.elevated,
+[style*="--elevated"] {
   box-shadow: 0 calc(var(--elevated) * 1px)
     calc(var(--elevated) * var(--elevated) * 1px)
     var(--elevated-shadow-color);

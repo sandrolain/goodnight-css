@@ -4,7 +4,8 @@
   --margined-y: 1;
 }
 
-.margined {
+.margined,
+[style*="--margined"] {
   margin: calc(var(--margined-margin) * var(--margined-y))
           calc(var(--margined-margin) * var(--margined-x))
 }

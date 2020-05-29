@@ -38,34 +38,34 @@ body {
 }
 
 p {
-  margin-bottom: 1.15rem;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 1.5rem 0 0.5rem;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.125em;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 4.209em;
+  font-size: var(--size-999);
 }
 
 h2 {
-  font-size: 3.157em;
+  font-size: var(--size-800);
 }
 
 h3 {
-  font-size: 2.369em;
+  font-size: var(--size-600);
 }
 
 h4 {
-  font-size: 1.777em;
+  font-size:  var(--size-500);
 }
 
 h5 {
-  font-size: 1.333em;
+  font-size:  var(--size-400);
 }
 
 h1:first-child,
