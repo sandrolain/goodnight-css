@@ -6,14 +6,17 @@
   --button-text-color: var(--neutral-color-999);
   --button-icon-color: var(--neutral-color-300);
   --button-normal-color: var(--neutral-color-400);
-  --button-hover-color: var(--neutral-color-600);
+  --button-hover-color: var(--neutral-color-500);
   --button-active-color: var(--neutral-color-800);
   --button-screen-color: var(--neutral-color-950);
   --button-border-radius: 2px;
 }
 
-.btn,
-.btn-icon {
+.btn-input {
+  display: none !important;
+}
+
+.btn {
   display: inline-block;
   padding: var(--button-y-padding) var(--button-x-padding);
   border: var(--button-border-width) solid var(--button-normal-color);
@@ -24,16 +27,21 @@
   border-radius: var(--button-border-radius);
   margin: 0;
 }
-.btn:hover {
+.btn:hover,
+.btn:hover .btn {
   border-color: var(--button-hover-color);
   background-color: var(--button-hover-color);
 }
-.btn:active {
+.btn:active,
+.btn:active .btn,
+.btn.active,
+.btn.active .btn,
+.btn-input:checked + .btn,
+.btn-input:checked + .btn .btn {
   border-color: var(--button-active-color);
   background-color: var(--button-active-color);
 }
 
-.btn-square,
 .btn-icon {
   width: calc(var(--button-line-height) + (var(--button-y-padding) * 2) + (var(--input-border-width) * 2));
   padding: var(--button-y-padding) 0;
@@ -42,7 +50,7 @@
 .btn.primary {
   --button-icon-color: var(--primary-color-300);
   --button-normal-color: var(--primary-color-400);
-  --button-hover-color: var(--primary-color-600);
+  --button-hover-color: var(--primary-color-500);
   --button-active-color: var(--primary-color-800);
   --button-screen-color: var(--primary-color-950);
 }
@@ -50,7 +58,7 @@
 .btn.accent {
   --button-icon-color: var(--accent-color-300);
   --button-normal-color: var(--accent-color-400);
-  --button-hover-color: var(--accent-color-600);
+  --button-hover-color: var(--accent-color-500);
   --button-active-color: var(--accent-color-800);
   --button-screen-color: var(--accent-color-950);
 }
@@ -58,7 +66,7 @@
 .btn.critical {
   --button-icon-color: var(--critical-color-300);
   --button-normal-color: var(--critical-color-400);
-  --button-hover-color: var(--critical-color-600);
+  --button-hover-color: var(--critical-color-500);
   --button-active-color: var(--critical-color-800);
   --button-screen-color: var(--critical-color-950);
 }
@@ -66,7 +74,7 @@
 .btn.confirm {
   --button-icon-color: var(--confirm-color-300);
   --button-normal-color: var(--confirm-color-400);
-  --button-hover-color: var(--confirm-color-600);
+  --button-hover-color: var(--confirm-color-500);
   --button-active-color: var(--confirm-color-800);
   --button-screen-color: var(--confirm-color-950);
 }
@@ -116,16 +124,46 @@
   color: var(--button-active-color);
 }
 
-.btn-icon {
+.btn-tab {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--button-normal-color);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-color: var(--button-active-color);
+}
+.btn-tab:hover {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-hover-color);
+  border-bottom-color: var(--button-hover-color);
+}
+.btn-tab:active {
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  color: var(--button-active-color);
+  border-bottom-color: var(--button-normal-color);
+}
+.btn-tab.active,
+.btn-input:checked + .btn-tab {
+  border-bottom-width: calc(var(--button-border-width) * 2);
+  padding-bottom: calc(var(--button-y-padding) - var(--button-border-width));
+  background-color: var(--button-screen-color);
+  border-color: var(--button-screen-color);
+  border-bottom-color: var(--button-icon-color);
+  color: var(--button-icon-color);
+}
+
+.btn > .btn-icon {
   margin-top: calc((var(--button-y-padding) + var(--button-border-width)) * -1);
   margin-bottom: calc((var(--button-y-padding) + var(--button-border-width)) * -1);
   background-color: var(--button-icon-color);
 }
-.btn-icon {
+.btn > .btn-icon {
   margin-left: calc((var(--button-x-padding) + var(--button-border-width)) * -1);
   margin-right: var(--button-x-padding);
 }
-.btn-icon.after {
+.btn > .btn-icon.after {
   margin-right: calc((var(--button-x-padding) + var(--button-border-width)) * -1);
   margin-left: var(--button-x-padding);
 }
