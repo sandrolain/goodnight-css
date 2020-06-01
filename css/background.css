@@ -1,0 +1,27 @@
+:root {
+  --background-0-color: var(--neutral-color-999);
+  --background-1-color: var(--neutral-color-900);
+  --background-2-color: var(--neutral-color-800);
+  --background-3-color: var(--neutral-color-700);
+  --background-4-color: var(--neutral-color-600);
+}
+
+.background-0 {
+  background-color: var(--background-0-color);
+}
+
+.background-1 {
+  background-color: var(--background-1-color);
+}
+
+.background-2 {
+  background-color: var(--background-2-color);
+}
+
+.background-3 {
+  background-color: var(--background-3-color);
+}
+
+.background-4 {
+  background-color: var(--background-4-color);
+}

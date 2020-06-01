@@ -4,8 +4,12 @@
   --margined-y: 1;
 }
 
-.margined,
-[style*="--margined"] {
+.margined {
   margin: calc(var(--margined-margin) * var(--margined-y))
           calc(var(--margined-margin) * var(--margined-x))
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
 }

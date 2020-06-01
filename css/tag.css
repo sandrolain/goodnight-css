@@ -1,0 +1,48 @@
+:root {
+  --tag-font-size: var(--size-100);
+  --tag-x-padding: 0.75em;
+  --tag-y-padding: 0.5em;
+  --tag-line-height: 1em;
+  --tag-text-color: var(--neutral-color-300);
+  --tag-bg-color: var(--neutral-color-900);
+  --tag-border-radius: 2px;
+}
+
+.tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: var(--tag-y-padding) var(--tag-x-padding);
+  background-color: var(--tag-bg-color);
+  color: var(--tag-text-color);
+  border-radius: var(--tag-border-radius);
+  font-size: var(--tag-font-size);
+  line-height: var(--tag-line-height);
+}
+
+.tag.primary {
+  --tag-text-color: var(--primary-color-300);
+  --tag-bg-color: var(--primary-color-900);
+}
+
+.tag.accent {
+  --tag-text-color: var(--accent-color-300);
+  --tag-bg-color: var(--accent-color-900);
+}
+
+.tag.critical {
+  --tag-text-color: var(--critical-color-300);
+  --tag-bg-color: var(--critical-color-900);
+}
+
+.tag.warning {
+  --tag-text-color: var(--warning-color-300);
+  --tag-bg-color: var(--warning-color-900);
+}
+
+.tag.confirm {
+  --tag-text-color: var(--confirm-color-30p);
+  --tag-bg-color: var(--confirm-color-900);
+}

@@ -55,6 +55,19 @@
   --critical-color-900: hsl(var(--critical-color-hue), var(--critical-color-sat), 90%);
   --critical-color-950: hsl(var(--critical-color-hue), var(--critical-color-sat), 95%);
   
+  --warning-color-hue: 50;
+  --warning-color-sat: 60%;
+  --warning-color-100: hsl(var(--warning-color-hue), var(--warning-color-sat), 10%);
+  --warning-color-200: hsl(var(--warning-color-hue), var(--warning-color-sat), 20%);
+  --warning-color-300: hsl(var(--warning-color-hue), var(--warning-color-sat), 30%);
+  --warning-color-400: hsl(var(--warning-color-hue), var(--warning-color-sat), 40%);
+  --warning-color-500: hsl(var(--warning-color-hue), var(--warning-color-sat), 50%);
+  --warning-color-600: hsl(var(--warning-color-hue), var(--warning-color-sat), 60%);
+  --warning-color-700: hsl(var(--warning-color-hue), var(--warning-color-sat), 70%);
+  --warning-color-800: hsl(var(--warning-color-hue), var(--warning-color-sat), 80%);
+  --warning-color-900: hsl(var(--warning-color-hue), var(--warning-color-sat), 90%);
+  --warning-color-950: hsl(var(--warning-color-hue), var(--warning-color-sat), 95%);
+  
   --confirm-color-hue: 100;
   --confirm-color-sat: 60%;
   --confirm-color-100: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 10%);
@@ -85,4 +98,10 @@
 :root {
   --transition-time: 200ms;
   --transition-easing: ease;
+}
+
+/* Typo */
+:root {
+  --font-family-sans: Tahoma, Arial, sans-serif;
+  --font-family-mono: monospace;
 }

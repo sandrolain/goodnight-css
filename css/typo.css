@@ -1,0 +1,32 @@
+:root {
+  --optimal-text-min: 20em;
+  --optimal-text-max: 35em;
+}
+
+.optimal-text {
+  min-width: var(--optimal-text-min);
+  max-width: var(--optimal-text-max);
+}
+
+.align-justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*
+line-height inversa alla dimensione del testo
+line-height proporzionale alla larghezza del testo
+
+*/
