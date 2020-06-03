@@ -24,7 +24,8 @@
   left: 0;
   background-color: var(--loader-color-1);
   animation: loader-1 2000ms ease-in-out infinite;
-  transform-origin: 50% 50%;
+  transform-origin: 0% 50%;
+  transform: translateX(-100%);
 }
 .loader::after {
   content: "";
@@ -37,7 +38,8 @@
   background-color: var(--loader-color-2);
   animation: loader-1 2000ms ease-in-out infinite;
   animation-delay: 250ms;
-  transform-origin: 50% 50%;
+  transform-origin: 0% 50%;
+  transform: translateX(-100%);
 }
 
 @keyframes loader-1 {
