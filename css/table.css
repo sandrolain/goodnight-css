@@ -1,8 +1,9 @@
 :root {
   --table-bg-color: var(--neutral-color-900);
   --table-td-bg-color: var(--neutral-color-999);
+  --table-td-hover-color: var(--neutral-color-950);
   --table-td-spacing: 0;
-  --table-tr-spacing: 2px;
+  --table-tr-spacing: 4px;
   --table-border-radius: 2px;
   --table-td-x-padding: 1.25rem;
   --table-td-y-padding: 0.75rem;
@@ -56,4 +57,7 @@ tbody td.number {
 
 tbody tr:hover {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+}
+tbody tr:hover td {
+  background-color: var(--table-td-hover-color);
 }

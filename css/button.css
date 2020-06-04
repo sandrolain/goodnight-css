@@ -158,6 +158,7 @@
   margin-top: calc((var(--button-y-padding) + var(--button-border-width)) * -1);
   margin-bottom: calc((var(--button-y-padding) + var(--button-border-width)) * -1);
   background-color: var(--button-icon-color);
+  color: var(--button-text-color);
 }
 .btn > .btn-icon {
   margin-left: calc((var(--button-x-padding) + var(--button-border-width)) * -1);
