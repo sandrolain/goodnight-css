@@ -1,0 +1,48 @@
+:root {
+  --menu-x-padding: 1.25em;
+  --menu-y-padding: 0.75em;
+  --menu-line-height: 1em;
+  --menu-bg-color: var(--neutral-color-950);
+  --menu-item-bg-color: var(--neutral-color-999);
+  --menu-item-text-color: var(--neutral-color-300);
+  --menu-hover-bg-color: var(--primary-color-950);
+  --menu-hover-text-color: var(--primary-color-400);
+  --menu-active-bg-color: var(--primary-color-900);
+  --menu-active-text-color: var(--primary-color-200);
+  --menu-hr-height: 2px;
+  --menu-border-radius: 0.75em;
+}
+
+.menu {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--menu-bg-color);
+  padding: var(--menu-y-padding) 0;
+}
+
+.menu-item,
+.menu-item:visited {
+  display: block;
+  width: 100%;
+  line-height: var(--menu-line-height);
+  padding: var(--menu-y-padding) var(--menu-x-padding);
+  background-color: var(--menu-item-bg-color);
+  color: var(--menu-item-text-color);
+  text-decoration: none
+}
+
+.menu-item:hover {
+  background-color: var(--menu-hover-bg-color);
+  color: var(--menu-hover-text-color);
+}
+.menu-item:active,
+.menu-item.active {
+  background-color: var(--menu-active-bg-color);
+  color: var(--menu-active-text-color);
+}
+
+.menu-hr {
+  display: block;
+  height: var(--menu-hr-height);
+}
+
