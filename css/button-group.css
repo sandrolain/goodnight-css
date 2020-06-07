@@ -21,3 +21,14 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
+
+.button-group.collapsed {
+  --button-group-gap: -1px;
+}
+
+.button-group > *:hover,
+.button-group > *:active,
+.button-group > *.active {
+  position: relative
+  z-index: 2;
+}
