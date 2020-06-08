@@ -4,7 +4,9 @@
   --margined-y: 1;
 }
 
-.margined {
+.margined,
+[style*="--margined-x:"],
+[style*="--margined-y:"] {
   margin: calc(var(--margined-margin) * var(--margined-y))
           calc(var(--margined-margin) * var(--margined-x))
 }
@@ -12,4 +14,14 @@
 .centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  [style*="--md--margined-x:"] {
+    --margined-x: var(--md--margined-x) !important;
+    color: #ff0000
+  }
+  [style*="--md--margined-y:"] {
+    --margined-y: var(--md--margined-y) !important;
+  }
 }
