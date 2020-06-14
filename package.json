@@ -1,0 +1,31 @@
+{
+  "name": "goodnight-css",
+  "version": "1.0.0",
+  "description": "Good Night CSS UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass src/*.scss -o build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrolain/goodnight-css.git"
+  },
+  "keywords": [
+    "css",
+    "ui",
+    "design",
+    "system",
+    "library",
+    "components"
+  ],
+  "author": "Sandro Lain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandrolain/goodnight-css/issues"
+  },
+  "homepage": "https://github.com/sandrolain/goodnight-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
