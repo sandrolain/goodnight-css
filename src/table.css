@@ -79,6 +79,11 @@ tbody tr:hover td {
   background-color: var(--table-td-hover-color);
 }
 
+tfoot td {
+  color: var(--table-th-color);
+  background-color: var(--table-bg-color);
+}
+
 .table-scroll {
   overflow: auto;
   position: relative;
@@ -90,12 +95,23 @@ tbody tr:hover td {
   position: sticky;
   top: 0;
 }
+
+.table-scroll tfoot,
+.table-scroll tfoot td {
+  position: sticky;
+  bottom: 0;
+}
+
 .table-scroll thead th:first-child,
-.table-scroll tbody th {
+.table-scroll tbody th,
+.table-scroll tfoot td:first-child {
   position: sticky;
   left: 0;
   z-index: 2;
 }
-.table-scroll thead th:first-child {
+
+.table-scroll thead th:first-child,
+.table-scroll tfoot,
+.table-scroll tfoot td:first-child {
   z-index: 3;
 }
