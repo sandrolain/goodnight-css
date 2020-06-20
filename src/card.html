@@ -14,7 +14,7 @@
 </head>
 <body ontouchstart="">
 
-<div class="card margined rounded elevated" style="--elevated: 2; --margined: 2">
+<div class="card margined rounded elevated" style="--elevated: 2; --margined-x: 2; --margined-y: 2">
   <div class="card-image rounded-top"><img src="https://picsum.photos/1024/480" /></div>
   <div class="card-content">
     <h2>Card Title</h2>
@@ -29,11 +29,38 @@
     content
   </div>
   <div class="card-bar rounded-bottom">
-    <button class="btn">Button</div>
+    <button class="btn btn-outline">Cancel</button>
+    <button class="btn">confirm</button>
   </div>
 </div>
 
+<div class="card margined elevated primary" style="width: 320px; --elevated: 2; --margined-x: 2; --margined-y: 2">
+  <div class="card-content">
+    content
+  </div>
+  <div class="card-hr"></div>
+  <div class="card-content">
+    content
+  </div>
+  <div class="card-bar">
+    <button class="btn btn-outline primary">Cancel</button>
+    <button class="btn primary">confirm</button>
+  </div>
+</div>
 
+<div class="card margined elevated horizontal" style=" --elevated: 2; --margined-x: 2; --margined-y: 2">
+  <div class="card-content">
+    content
+  </div>
+  <div class="card-hr"></div>
+  <div class="card-content">
+    content
+  </div>
+  <div class="card-bar">
+    <button class="btn btn-outline">Cancel</button>
+    <button class="btn">confirm</button>
+  </div>
+</div>
 
 </body>
 </html>

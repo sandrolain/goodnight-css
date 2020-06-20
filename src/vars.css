@@ -14,6 +14,7 @@
   --neutral-color-800: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 80%);
   --neutral-color-900: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 90%);
   --neutral-color-950: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 95%);
+  --neutral-color-970: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 97%);
   --neutral-color-999: white;
   
   --primary-color-hue: 240;
@@ -28,6 +29,7 @@
   --primary-color-800: hsl(calc(var(--primary-color-hue) - 15), var(--primary-color-sat), 80%);
   --primary-color-900: hsl(calc(var(--primary-color-hue) - 20), var(--primary-color-sat), 90%);
   --primary-color-950: hsl(calc(var(--primary-color-hue) - 25), var(--primary-color-sat), 95%);
+  --primary-color-970: hsl(calc(var(--primary-color-hue) - 25), var(--primary-color-sat), 97%);
   
   --accent-color-hue: 320;
   --accent-color-sat: 80%;

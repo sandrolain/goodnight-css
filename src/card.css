@@ -2,12 +2,16 @@
   --card-y-padding: 1.25em;
   --card-x-padding: 2em;
   --card-hr-height: 1px;
+  --card-border-width: 4px;
+  --card-border-color: var(--neutral-color-500);
   --card-hr-color: var(--neutral-color-900);
+  --card-bar-color: var(--neutral-color-970);
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  border-top: var(--card-border-width) solid var(--card-border-color);
 }
 
 .card-content {
@@ -34,6 +38,30 @@
 
 .card-bar {
   white-space: nowrap;
-  background-color: var(--neutral-color-950);
+  background-color: var(--card-bar-color);
   padding: var(--card-y-padding) var(--card-x-padding);
+  display: flex;
+  justify-content: space-between;
 }
+
+.card.horizontal {
+  flex-direction: row;
+  border-left: var(--card-border-width) solid var(--card-border-color);
+  border-top: none;
+}
+.card.horizontal .card-hr {
+  width: var(--card-hr-height);
+  height: auto;
+  margin: var(--card-y-padding) 0;
+}
+.card.horizontal .card-bar {
+  flex-direction: column;
+}
+
+.card.primary {
+  --card-border-color: var(--primary-color-500);
+  --card-hr-color: var(--primary-color-900);
+  --card-bar-color: var(--primary-color-970);
+}
+
+/* TODO: other colors */
