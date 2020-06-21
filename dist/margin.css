@@ -1,0 +1,86 @@
+:root {
+  --margin-base: 1.25em;
+}
+
+[style*="-margin:"] {
+  margin: calc(var(--margin-base) * var(--margin-val));
+}
+
+[style*="-margin-x:"] {
+  margin-left: calc(var(--margin-base) * var(--margin-x-val));
+  margin-right: calc(var(--margin-base) * var(--margin-x-val));
+}
+
+[style*="--margin:"] {
+  --margin-val: var(--margin);
+}
+
+[style*="--margin-x:"] {
+  --margin-x-val: var(--margin-x);
+}
+
+[style*="--margin-y:"] {
+  --margin-y-val: var(--margin-y);
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  [style*="--xs-margin:"] {
+    --margin-val: var(--xs-margin);
+  }
+  [style*="--xs-margin-x:"] {
+    --margin-x-val: var(--xs-margin-x);
+  }
+  [style*="--xs-margin-y:"] {
+    --margin-y-val: var(--xs-margin-y);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  [style*="--s-margin:"] {
+    --margin-val: var(--s-margin);
+  }
+  [style*="--s-margin-x:"] {
+    --margin-x-val: var(--s-margin-x);
+  }
+  [style*="--s-margin-y:"] {
+    --margin-y-val: var(--s-margin-y);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  [style*="--m-margin:"] {
+    --margin-val: var(--m-margin);
+  }
+  [style*="--m-margin-x:"] {
+    --margin-x-val: var(--m-margin-x);
+  }
+  [style*="--m-margin-y:"] {
+    --margin-y-val: var(--m-margin-y);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  [style*="--l-margin:"] {
+    --margin-val: var(--l-margin);
+  }
+  [style*="--l-margin-x:"] {
+    --margin-x-val: var(--l-margin-x);
+  }
+  [style*="--l-margin-y:"] {
+    --margin-y-val: var(--l-margin-y);
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 9999px) {
+  [style*="--xl-margin:"] {
+    --margin-val: var(--xl-margin);
+  }
+  [style*="--xl-margin-x:"] {
+    --margin-x-val: var(--xl-margin-x);
+  }
+  [style*="--xl-margin-y:"] {
+    --margin-y-val: var(--xl-margin-y);
+  }
+}
+
+/*# sourceMappingURL=margin.css.map */

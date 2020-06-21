@@ -1,0 +1,31 @@
+@mixin generate-media-class($sel, $ranges) {
+  .#{$sel} {
+    @content;
+  }
+  @each $size, $min, $max in $ranges {
+    @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+      .#{$size}-#{$sel} {
+        @content;
+      }
+    }
+  }
+}
+
+
+@mixin generate-media-var-selectors($variables, $ranges) {
+  @each $var in $variables {
+    [style*="--#{$var}:"] {
+      --#{$var}-val: var(--#{$var});
+    }
+  }
+  @each $size, $min, $max in $ranges {
+    @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+      @each $var in $variables {
+        [style*="--#{$size}-#{$var}:"] {
+          --#{$var}-val: var(--#{$size}-#{$var});
+        }
+      }
+    }
+  }
+}
+

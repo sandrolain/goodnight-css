@@ -1,0 +1,21 @@
+@import "./lib/_constants.scss";
+@import "./lib/_functions.scss";
+
+:root {
+  --margin-base: 1.25em;
+}
+
+[style*="-margin:"] {
+  margin: calc(var(--margin-base) * var(--margin-val));
+}
+[style*="-margin-x:"] {
+  margin-left: calc(var(--margin-base) * var(--margin-x-val));
+  margin-right: calc(var(--margin-base) * var(--margin-x-val));
+}
+
+$variables:
+  "margin",
+  "margin-x",
+  "margin-y";
+
+@include generate-media-var-selectors($variables, $media-ranges);
