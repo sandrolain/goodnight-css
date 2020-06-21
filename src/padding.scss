@@ -1,0 +1,25 @@
+@import "./lib/_constants.scss";
+@import "./lib/_functions.scss";
+
+:root {
+  --padding-base: 1em;
+}
+
+[style*="-padding:"] {
+  padding: calc(var(--padding-base) * var(--padding-val));
+}
+[style*="-padding-x:"] {
+  padding-left: calc(var(--padding-base) * var(--padding-x-val));
+  padding-right: calc(var(--padding-base) * var(--padding-x-val));
+}
+[style*="-padding-y:"] {
+  padding-top: calc(var(--padding-base) * var(--padding-y-val));
+  padding-bottom: calc(var(--padding-base) * var(--padding-y-val));
+}
+
+$variables:
+  "padding",
+  "padding-x",
+  "padding-y";
+
+@include generate-media-var-selectors($variables, $media-ranges);

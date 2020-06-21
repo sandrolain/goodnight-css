@@ -2,7 +2,7 @@
 @import "./lib/_functions.scss";
 
 :root {
-  --margin-base: 1.25em;
+  --margin-base: 1em;
 }
 
 [style*="-margin:"] {
@@ -11,6 +11,10 @@
 [style*="-margin-x:"] {
   margin-left: calc(var(--margin-base) * var(--margin-x-val));
   margin-right: calc(var(--margin-base) * var(--margin-x-val));
+}
+[style*="-margin-y:"] {
+  margin-top: calc(var(--margin-base) * var(--margin-y-val));
+  margin-bottom: calc(var(--margin-base) * var(--margin-y-val));
 }
 
 $variables:
