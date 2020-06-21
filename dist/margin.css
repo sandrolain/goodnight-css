@@ -1,5 +1,5 @@
 :root {
-  --margin-base: 1.25em;
+  --margin-base: 1em;
 }
 
 [style*="-margin:"] {
@@ -9,6 +9,11 @@
 [style*="-margin-x:"] {
   margin-left: calc(var(--margin-base) * var(--margin-x-val));
   margin-right: calc(var(--margin-base) * var(--margin-x-val));
+}
+
+[style*="-margin-y:"] {
+  margin-top: calc(var(--margin-base) * var(--margin-y-val));
+  margin-bottom: calc(var(--margin-base) * var(--margin-y-val));
 }
 
 [style*="--margin:"] {
@@ -23,7 +28,7 @@
   --margin-y-val: var(--margin-y);
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) {
   [style*="--xs-margin:"] {
     --margin-val: var(--xs-margin);
   }
@@ -35,43 +40,43 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  [style*="--s-margin:"] {
-    --margin-val: var(--s-margin);
+@media (min-width: 480px) {
+  [style*="--sm-margin:"] {
+    --margin-val: var(--sm-margin);
   }
-  [style*="--s-margin-x:"] {
-    --margin-x-val: var(--s-margin-x);
+  [style*="--sm-margin-x:"] {
+    --margin-x-val: var(--sm-margin-x);
   }
-  [style*="--s-margin-y:"] {
-    --margin-y-val: var(--s-margin-y);
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  [style*="--m-margin:"] {
-    --margin-val: var(--m-margin);
-  }
-  [style*="--m-margin-x:"] {
-    --margin-x-val: var(--m-margin-x);
-  }
-  [style*="--m-margin-y:"] {
-    --margin-y-val: var(--m-margin-y);
+  [style*="--sm-margin-y:"] {
+    --margin-y-val: var(--sm-margin-y);
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  [style*="--l-margin:"] {
-    --margin-val: var(--l-margin);
+@media (min-width: 768px) {
+  [style*="--md-margin:"] {
+    --margin-val: var(--md-margin);
   }
-  [style*="--l-margin-x:"] {
-    --margin-x-val: var(--l-margin-x);
+  [style*="--md-margin-x:"] {
+    --margin-x-val: var(--md-margin-x);
   }
-  [style*="--l-margin-y:"] {
-    --margin-y-val: var(--l-margin-y);
+  [style*="--md-margin-y:"] {
+    --margin-y-val: var(--md-margin-y);
   }
 }
 
-@media screen and (min-width: 1281px) and (max-width: 9999px) {
+@media (min-width: 1024px) {
+  [style*="--lg-margin:"] {
+    --margin-val: var(--lg-margin);
+  }
+  [style*="--lg-margin-x:"] {
+    --margin-x-val: var(--lg-margin-x);
+  }
+  [style*="--lg-margin-y:"] {
+    --margin-y-val: var(--lg-margin-y);
+  }
+}
+
+@media (min-width: 1280px) {
   [style*="--xl-margin:"] {
     --margin-val: var(--xl-margin);
   }
