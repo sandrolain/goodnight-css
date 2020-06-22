@@ -1,0 +1,53 @@
+:root {
+  --optimal-text-min: 20em;
+  --optimal-text-max: 35em;
+}
+
+
+p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+p:first-child,
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+p:last-child,
+ul:last-child
+ol:last-child {
+  margin-bottom: 0;
+}
+
+small, .txt-sm {font-size: 0.75em;}
+
+
+.optimal-text-width {
+  min-width: var(--optimal-text-min);
+  max-width: var(--optimal-text-max);
+}
+
+.align-justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*
+line-height inversa alla dimensione del testo
+line-height proporzionale alla larghezza del testo
+
+*/

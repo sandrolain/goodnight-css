@@ -19,7 +19,7 @@
     }
   }
   @each $size, $min, $max in $ranges {
-    @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+    @media (min-width: #{$min}) {
       @each $var in $variables {
         [style*="--#{$size}-#{$var}:"] {
           --#{$var}-val: var(--#{$size}-#{$var});

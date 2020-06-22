@@ -1,0 +1,32 @@
+@import "./lib/_constants.scss";
+@import "./lib/_functions.scss";
+
+:root {
+  --radius-base: 0.75em;
+}
+
+[style*="-radius:"] {
+  border-radius: calc(var(--radius-radius) * var(--radius-val));
+}
+
+[style*="-radius-t:"] {
+  border-radius:
+    calc(var(--radius-base) * var(--radius-t-val))
+    calc(var(--radius-base) * var(--radius-t-val))
+    0 0;
+}
+
+[style*="-radius-b:"] {
+  border-radius:
+    0 0
+    calc(var(--radius-base) * var(--radius-b-val))
+    calc(var(--radius-base) * var(--radius-b-val));
+}
+
+
+$variables:
+  "radius",
+  "radius-t",
+  "radius-b";
+
+@include generate-media-var-selectors($variables, $media-ranges);

@@ -1,0 +1,39 @@
+:root {
+  --base-font-family: var(--font-family-sans);
+  --base-font-size: 16px;
+  --base-line-height: 1.5em;
+  --base-text-color: var(--neutral-color-200);
+  --base-bg-color: var(--neutral-color-999);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+*:focus {
+  outline: 1px solid var(--primary-color-900);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--base-font-sise);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-size: inherit;
+  line-height: var(--base-line-height);
+  background-color: var(--base-bg-color);
+  font-weight: 400;
+  color: var(--base-text-color);
+}
+
+

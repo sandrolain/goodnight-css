@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5 {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 400;
+  line-height: 1.125em;
+}
+
+h1 {
+  font-size: var(--size-999);
+}
+
+h2 {
+  font-size: var(--size-800);
+}
+
+h3 {
+  font-size: var(--size-600);
+}
+
+h4 {
+  font-size: var(--size-500);
+}
+
+h5 {
+  font-size: var(--size-400);
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=heading.css.map */

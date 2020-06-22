@@ -1,0 +1,121 @@
+:root {
+  --table-bg-color: var(--neutral-color-900);
+  --table-td-bg-color: var(--neutral-color-999);
+  --table-td-hover-color: var(--neutral-color-950);
+  --table-td-spacing: 0;
+  --table-tr-spacing: 4px;
+  --table-border-radius: 2px;
+  --table-td-x-padding: 1.25rem;
+  --table-td-y-padding: 0.75rem;
+  --table-th-font-size: 0.75em;
+  --table-th-font-weight: 600;
+  --table-th-color: var(--neutral-color-400);
+}
+
+.table {
+  display: inline-block;
+  padding: var(--table-td-y-padding) var(--table-td-x-padding);
+  padding-top: 0;
+  border-radius: var(--table-border-radius);
+  background-color: var(--table-bg-color);
+}
+
+table {
+  border-collapse: collapse;
+  background-color: var(--table-bg-color);
+  border: none;
+  position: relative;
+}
+
+tbody tr {
+  border-bottom: var(--table-tr-spacing) solid var(--table-bg-color);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+th.number {
+  text-align: right;
+}
+
+th,
+td {
+  padding: var(--table-td-y-padding) var(--table-td-x-padding);
+  border: none;
+  text-align: left;
+}
+
+thead th {
+  font-size: var(--table-th-font-size);
+  font-weight: var(--table-th-font-weight);
+  color: var(--table-th-color);
+  background-color: var(--table-bg-color);
+}
+
+td:first-of-type,
+th:first-child {
+  border-radius: var(--table-border-radius) 0 0 var(--table-border-radius);
+}
+
+td:last-child {
+  border-radius: 0 var(--table-border-radius) var(--table-border-radius) 0;
+}
+
+thead th {
+  padding-bottom: calc(var(--table-td-y-padding) / 4);
+}
+
+tbody th,
+tbody td {
+  background-color: var(--table-td-bg-color);
+}
+
+tbody td.number {
+  text-align: right;
+  font-family: var(--font-family-mono);
+}
+
+tbody tr:hover th,
+tbody tr:hover td {
+  background-color: var(--table-td-hover-color);
+}
+
+tfoot td {
+  color: var(--table-th-color);
+  background-color: var(--table-bg-color);
+}
+
+.table-scroll {
+  overflow: auto;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+}
+
+.table-scroll tfoot,
+.table-scroll tfoot td {
+  position: sticky;
+  bottom: 0;
+}
+
+.table-scroll thead th:first-child,
+.table-scroll tbody th,
+.table-scroll tfoot td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.table-scroll thead th:first-child,
+.table-scroll tfoot,
+.table-scroll tfoot td:first-child {
+  z-index: 3;
+}
+
+/*# sourceMappingURL=table.css.map */

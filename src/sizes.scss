@@ -1,0 +1,28 @@
+@import "./lib/_constants.scss";
+@import "./lib/_functions.scss";
+
+:root {
+  --grid-g: 20;
+  --grid-w: 20;
+  --grid-h: 20;
+}
+
+[style*="-grid-w:"] {
+  width: calc((100% / var(--grid-g)) * var(--grid-w-val));
+}
+
+[style*="-grid-h:"] {
+  height: calc((100% / var(--grid-g)) * var(--grid-h-val));
+}
+
+
+$variables:
+  "grid-w",
+  "grid-h";
+
+@include generate-media-var-selectors($variables, $media-ranges);
+
+
+
+
+

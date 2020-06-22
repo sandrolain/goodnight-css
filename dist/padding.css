@@ -1,0 +1,91 @@
+:root {
+  --padding-base: 1em;
+}
+
+[style*="-padding:"] {
+  padding: calc(var(--padding-base) * var(--padding-val));
+}
+
+[style*="-padding-x:"] {
+  padding-left: calc(var(--padding-base) * var(--padding-x-val));
+  padding-right: calc(var(--padding-base) * var(--padding-x-val));
+}
+
+[style*="-padding-y:"] {
+  padding-top: calc(var(--padding-base) * var(--padding-y-val));
+  padding-bottom: calc(var(--padding-base) * var(--padding-y-val));
+}
+
+[style*="--padding:"] {
+  --padding-val: var(--padding);
+}
+
+[style*="--padding-x:"] {
+  --padding-x-val: var(--padding-x);
+}
+
+[style*="--padding-y:"] {
+  --padding-y-val: var(--padding-y);
+}
+
+@media (min-width: 0px) {
+  [style*="--xs-padding:"] {
+    --padding-val: var(--xs-padding);
+  }
+  [style*="--xs-padding-x:"] {
+    --padding-x-val: var(--xs-padding-x);
+  }
+  [style*="--xs-padding-y:"] {
+    --padding-y-val: var(--xs-padding-y);
+  }
+}
+
+@media (min-width: 480px) {
+  [style*="--sm-padding:"] {
+    --padding-val: var(--sm-padding);
+  }
+  [style*="--sm-padding-x:"] {
+    --padding-x-val: var(--sm-padding-x);
+  }
+  [style*="--sm-padding-y:"] {
+    --padding-y-val: var(--sm-padding-y);
+  }
+}
+
+@media (min-width: 768px) {
+  [style*="--md-padding:"] {
+    --padding-val: var(--md-padding);
+  }
+  [style*="--md-padding-x:"] {
+    --padding-x-val: var(--md-padding-x);
+  }
+  [style*="--md-padding-y:"] {
+    --padding-y-val: var(--md-padding-y);
+  }
+}
+
+@media (min-width: 1024px) {
+  [style*="--lg-padding:"] {
+    --padding-val: var(--lg-padding);
+  }
+  [style*="--lg-padding-x:"] {
+    --padding-x-val: var(--lg-padding-x);
+  }
+  [style*="--lg-padding-y:"] {
+    --padding-y-val: var(--lg-padding-y);
+  }
+}
+
+@media (min-width: 1280px) {
+  [style*="--xl-padding:"] {
+    --padding-val: var(--xl-padding);
+  }
+  [style*="--xl-padding-x:"] {
+    --padding-x-val: var(--xl-padding-x);
+  }
+  [style*="--xl-padding-y:"] {
+    --padding-y-val: var(--xl-padding-y);
+  }
+}
+
+/*# sourceMappingURL=padding.css.map */
