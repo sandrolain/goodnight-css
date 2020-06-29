@@ -1,0 +1,70 @@
+:root {
+  --wizard-bullet-size: 1.6em;
+  --wizard-normal-bullet-color: var(--neutral-color-950);
+  --wizard-normal-border-color: var(--neutral-color-600);
+  --wizard-normal-text-color: var(--neutral-color-400);
+  --wizard-active-bullet-color: var(--primary-color-950);
+  --wizard-active-border-color: var(--primary-color-500);
+  --wizard-active-text-color: var(--neutral-color-999);
+}
+
+.wizard {
+  display: flex;
+  overflow: hidden;
+  counter-reset: wizard;
+}
+
+.wizard-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  color: var(--wizard-active-border-color);
+}
+
+.wizard-step + .wizard-step::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--wizard-bullet-size) / 2 - 1px);
+  left: -50%;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background-color: var(--wizard-active-border-color);
+}
+
+.wizard-step::before {
+  counter-increment: wizard;
+  content: counter(wizard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid var(--wizard-active-border-color);
+  border-radius: 50%;
+  background-color: var(--wizard-active-border-color);
+  color: var(--wizard-active-text-color);
+  width: var(--wizard-bullet-size);
+  height: var(--wizard-bullet-size);
+  text-align: center;
+  margin-bottom: calc(var(--wizard-bullet-size) / 4);
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.wizard-step.current ~ .wizard-step {
+  color: var(--wizard-normal-text-color);
+}
+
+.wizard-step.current ~ .wizard-step::after {
+  background-color: var(--wizard-normal-border-color);
+}
+
+.wizard-step.current ~ .wizard-step::before {
+  background-color: var(--wizard-normal-bullet-color);
+  border-color: var(--wizard-normal-border-color);
+  color: var(--wizard-normal-text-color);
+}
+
+
