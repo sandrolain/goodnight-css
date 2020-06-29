@@ -26,12 +26,46 @@
   text-align: center;
   border-radius: var(--button-border-radius);
   margin: 0;
+
+  &:hover,
+  &:hover .btn {
+    border-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);
+  }
+
+  &.primary {
+    --button-icon-color: var(--primary-color-300);
+    --button-normal-color: var(--primary-color-400);
+    --button-hover-color: var(--primary-color-500);
+    --button-active-color: var(--primary-color-800);
+    --button-screen-color: var(--primary-color-950);
+  }
+
+  &.accent {
+    --button-icon-color: var(--accent-color-300);
+    --button-normal-color: var(--accent-color-400);
+    --button-hover-color: var(--accent-color-500);
+    --button-active-color: var(--accent-color-800);
+    --button-screen-color: var(--accent-color-950);
+  }
+
+  &.critical {
+    --button-icon-color: var(--critical-color-300);
+    --button-normal-color: var(--critical-color-400);
+    --button-hover-color: var(--critical-color-500);
+    --button-active-color: var(--critical-color-800);
+    --button-screen-color: var(--critical-color-950);
+  }
+
+  &.confirm {
+    --button-icon-color: var(--confirm-color-300);
+    --button-normal-color: var(--confirm-color-400);
+    --button-hover-color: var(--confirm-color-500);
+    --button-active-color: var(--confirm-color-800);
+    --button-screen-color: var(--confirm-color-950);
+  }
 }
-.btn:hover,
-.btn:hover .btn {
-  border-color: var(--button-hover-color);
-  background-color: var(--button-hover-color);
-}
+
 .btn:active,
 .btn:active .btn,
 .btn.active,
@@ -45,38 +79,6 @@
 .btn-icon {
   width: calc(var(--button-line-height) + (var(--button-y-padding) * 2) + (var(--input-border-width) * 2));
   padding: var(--button-y-padding) 0;
-}
-
-.btn.primary {
-  --button-icon-color: var(--primary-color-300);
-  --button-normal-color: var(--primary-color-400);
-  --button-hover-color: var(--primary-color-500);
-  --button-active-color: var(--primary-color-800);
-  --button-screen-color: var(--primary-color-950);
-}
-
-.btn.accent {
-  --button-icon-color: var(--accent-color-300);
-  --button-normal-color: var(--accent-color-400);
-  --button-hover-color: var(--accent-color-500);
-  --button-active-color: var(--accent-color-800);
-  --button-screen-color: var(--accent-color-950);
-}
-
-.btn.critical {
-  --button-icon-color: var(--critical-color-300);
-  --button-normal-color: var(--critical-color-400);
-  --button-hover-color: var(--critical-color-500);
-  --button-active-color: var(--critical-color-800);
-  --button-screen-color: var(--critical-color-950);
-}
-
-.btn.confirm {
-  --button-icon-color: var(--confirm-color-300);
-  --button-normal-color: var(--confirm-color-400);
-  --button-hover-color: var(--confirm-color-500);
-  --button-active-color: var(--confirm-color-800);
-  --button-screen-color: var(--confirm-color-950);
 }
 
 .btn-light {

@@ -20,13 +20,9 @@ ol:last-child {
   margin-bottom: 0;
 }
 
-small, .txt-sm {
+small,
+.small-text {
   font-size: 0.75em;
-}
-
-.optimal-text-width {
-  min-width: var(--optimal-text-min);
-  max-width: var(--optimal-text-max);
 }
 
 .align-justify {
@@ -44,6 +40,11 @@ small, .txt-sm {
 
 .align-center {
   text-align: center;
+}
+
+.optimal-text-width {
+  min-width: var(--optimal-text-min);
+  max-width: var(--optimal-text-max);
 }
 
 /*

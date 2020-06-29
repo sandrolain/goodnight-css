@@ -6,16 +6,20 @@
   display: inline-flex;
   flex-direction: row;
 }
+
 .button-group > * {
   margin-right: var(--button-group-gap);
 }
+
 .button-group > *:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
+
 .button-group > *:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
+
 .button-group > *:last-child {
   margin-right: 0;
   border-bottom-left-radius: 0;
@@ -29,6 +33,8 @@
 .button-group > *:hover,
 .button-group > *:active,
 .button-group > *.active {
-  position: relative
+  position: relative;
   z-index: 2;
 }
+
+/*# sourceMappingURL=button-group.css.map */

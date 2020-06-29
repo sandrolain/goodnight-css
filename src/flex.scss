@@ -1,0 +1,23 @@
+
+@mixin space-between {
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.flex {
+  display: flex;
+
+  @include space-between();
+}
+
+.flex-inline {
+  display: inline-flex;
+
+  @include space-between();
+}
+
+
+.flex-spacer {
+  flex: 1;
+}

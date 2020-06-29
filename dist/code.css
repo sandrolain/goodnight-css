@@ -1,0 +1,48 @@
+:root {
+  --code-bg-color: var(--neutral-color-950);
+  --code-text-color: var(--neutral-color-400);
+  --code-border-radius: 2px;
+  --code-border-color: var(--neutral-color-800);
+  --code-y-padding: 0.125em;
+  --code-x-padding: 0.25em;
+  --code-block-y-padding: 0.75em;
+  --code-block-x-padding: 1.25em;
+  --code-font-family: var(--font-family-mono);
+}
+
+code,
+.code,
+.code-block {
+  background-color: var(--code-bg-color);
+  color: var(--code-text-color);
+  border: 1px solid var(--code-border-color);
+  border-radius: var(--code-border-radius);
+  padding: var(--code-y-padding) var(--code-x-padding);
+  font-family: var(--code-font-family);
+}
+
+pre code,
+.code-block {
+  display: block;
+  white-space: pre;
+  padding: var(--code-block-y-padding) var(--code-block-x-padding);
+  overflow: auto;
+}
+
+code.primary,
+.code.primary,
+.code-block.primary {
+  --code-bg-color: var(--primary-color-950);
+  --code-border-color: var(--primary-color-800);
+  --code-text-color: var(--primary-color-400);
+}
+
+code.accent,
+.code.accent,
+.code-block.accent {
+  --code-bg-color: var(--accent-color-950);
+  --code-border-color: var(--accent-color-800);
+  --code-text-color: var(--accent-color-400);
+}
+
+/*# sourceMappingURL=code.css.map */

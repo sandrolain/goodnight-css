@@ -3,7 +3,6 @@
   --optimal-text-max: 35em;
 }
 
-
 p {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -21,12 +20,9 @@ ol:last-child {
   margin-bottom: 0;
 }
 
-small, .txt-sm {font-size: 0.75em;}
-
-
-.optimal-text-width {
-  min-width: var(--optimal-text-min);
-  max-width: var(--optimal-text-max);
+small,
+.small-text {
+  font-size: 0.75em;
 }
 
 .align-justify {
@@ -44,6 +40,12 @@ small, .txt-sm {font-size: 0.75em;}
 
 .align-center {
   text-align: center;
+}
+
+
+.optimal-text-width {
+  min-width: var(--optimal-text-min);
+  max-width: var(--optimal-text-max);
 }
 
 /*

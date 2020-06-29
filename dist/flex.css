@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+
+.flex.space-between {
+  justify-content: space-between;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-inline.space-between {
+  justify-content: space-between;
+}
+
+.flex-spacer {
+  flex: 1;
+}
+
+/*# sourceMappingURL=flex.css.map */

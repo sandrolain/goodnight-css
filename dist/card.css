@@ -14,29 +14,29 @@
   border-top: var(--card-border-width) solid var(--card-border-color);
 }
 
-.card-content {
+.card .card-content {
   padding: var(--card-y-padding) var(--card-x-padding);
 }
 
-.card-hr {
+.card .card-hr {
   display: block;
   height: var(--card-hr-height);
   margin: 0 var(--card-x-padding);
   background-color: var(--card-hr-color);
 }
 
-.card-image {
+.card .card-image {
   max-width: 100%;
   overflow: hidden;
 }
 
-.card-image img {
+.card .card-image img {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-.card-bar {
+.card .card-bar {
   white-space: nowrap;
   background-color: var(--card-bar-color);
   padding: var(--card-y-padding) var(--card-x-padding);
@@ -49,11 +49,13 @@
   border-left: var(--card-border-width) solid var(--card-border-color);
   border-top: none;
 }
+
 .card.horizontal .card-hr {
   width: var(--card-hr-height);
   height: auto;
   margin: var(--card-y-padding) 0;
 }
+
 .card.horizontal .card-bar {
   flex-direction: column;
 }
@@ -64,4 +66,10 @@
   --card-bar-color: var(--primary-color-970);
 }
 
-/* TODO: other colors */
+.card.accent {
+  --card-border-color: var(--accent-color-500);
+  --card-hr-color: var(--accent-color-900);
+  --card-bar-color: var(--accent-color-970);
+}
+
+/*# sourceMappingURL=card.css.map */

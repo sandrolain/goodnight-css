@@ -22,7 +22,7 @@
   line-height: var(--tag-line-height);
 }
 
-.tag-rounded {
+.tag.tag-rounded {
   border-radius: calc(var(--tag-line-height) / 2 + var(--tag-y-padding));
 }
 

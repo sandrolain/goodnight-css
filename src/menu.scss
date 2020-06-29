@@ -20,25 +20,27 @@
   padding: var(--menu-y-padding) 0;
 }
 
-.menu-item,
-.menu-item:visited {
-  display: block;
-  width: 100%;
-  line-height: var(--menu-line-height);
-  padding: var(--menu-y-padding) var(--menu-x-padding);
-  background-color: var(--menu-item-bg-color);
-  color: var(--menu-item-text-color);
-  text-decoration: none
-}
+.menu-item {
+  &,
+  &:visited {
+    display: block;
+    width: 100%;
+    line-height: var(--menu-line-height);
+    padding: var(--menu-y-padding) var(--menu-x-padding);
+    background-color: var(--menu-item-bg-color);
+    color: var(--menu-item-text-color);
+    text-decoration: none
+  }
 
-.menu-item:hover {
-  background-color: var(--menu-hover-bg-color);
-  color: var(--menu-hover-text-color);
-}
-.menu-item:active,
-.menu-item.active {
-  background-color: var(--menu-active-bg-color);
-  color: var(--menu-active-text-color);
+  &:hover {
+    background-color: var(--menu-hover-bg-color);
+    color: var(--menu-hover-text-color);
+  }
+  &:active,
+  &.active {
+    background-color: var(--menu-active-bg-color);
+    color: var(--menu-active-text-color);
+  }
 }
 
 .menu-hr {

@@ -1,5 +1,5 @@
 /* Dark Color Scheme */
-.dark {
+.theme-dark {
   --neutral-color-hue: 240;
   --neutral-color-sat: 10%;
   --neutral-color-000: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 90%);;
@@ -14,7 +14,7 @@
   --neutral-color-900: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 40%);
   --neutral-color-950: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 35%);
   --neutral-color-999: hsl(var(--neutral-color-hue), var(--neutral-color-sat), 10%);
-  
+
   --primary-color-hue: 240;
   --primary-color-sat: 90%;
   --primary-color-100: hsl(var(--primary-color-hue), var(--primary-color-sat), 80%);
@@ -27,7 +27,7 @@
   --primary-color-800: hsl(var(--primary-color-hue), var(--primary-color-sat), 45%);
   --primary-color-900: hsl(var(--primary-color-hue), var(--primary-color-sat), 40%);
   --primary-color-950: hsl(var(--primary-color-hue), var(--primary-color-sat), 35%);
-  
+
   --accent-color-hue: 320;
   --accent-color-sat: 90%;
   --accent-color-100: hsl(var(--accent-color-hue), var(--accent-color-sat), 80%);
@@ -40,7 +40,7 @@
   --accent-color-800: hsl(var(--accent-color-hue), var(--accent-color-sat), 45%);
   --accent-color-900: hsl(var(--accent-color-hue), var(--accent-color-sat), 40%);
   --accent-color-950: hsl(var(--accent-color-hue), var(--accent-color-sat), 35%);
-  
+
   --critical-color-hue: 10;
   --critical-color-sat: 100%;
   --critical-color-100: hsl(var(--critical-color-hue), var(--critical-color-sat), 10%);
@@ -53,7 +53,7 @@
   --critical-color-800: hsl(var(--critical-color-hue), var(--critical-color-sat), 80%);
   --critical-color-900: hsl(var(--critical-color-hue), var(--critical-color-sat), 90%);
   --critical-color-950: hsl(var(--critical-color-hue), var(--critical-color-sat), 95%);
-  
+
   --confirm-color-hue: 100;
   --confirm-color-sat: 60%;
   --confirm-color-100: hsl(var(--confirm-color-hue), var(--confirm-color-sat), 10%);

@@ -15,28 +15,28 @@
   padding: var(--selectable-y-padding) var(--selectable-x-padding);
   align-items: center;
   position: relative;
-}
 
-.selectable:hover {
-  background-color: var(--selectable-hover-color);
-}
+  &:hover {
+    background-color: var(--selectable-hover-color);
+  }
 
-.selectable input {
-  vertical-align: middle;
-  margin-right: var(--selectable-x-padding);
-}
+  input {
+    vertical-align: middle;
+    margin-right: var(--selectable-x-padding);
+  }
 
-.selectable span {
-  display: block;
-}
+  span {
+    display: block;
+  }
 
-.selectable:not(:last-child)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: var(--selectable-x-padding);
-  right: var(--selectable-x-padding);
-  height: var(--selectable-hr-height);
-  background-color: var(--selectable-hr-color);
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: var(--selectable-x-padding);
+    right: var(--selectable-x-padding);
+    height: var(--selectable-hr-height);
+    background-color: var(--selectable-hr-color);
+  }
 }

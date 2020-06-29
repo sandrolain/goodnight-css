@@ -1,0 +1,44 @@
+:root {
+  --selectable-y-padding: 0.50em;
+  --selectable-x-padding: 1.25em;
+  --selectable-bg-color: var(--neutral-color-999);
+  --selectable-hover-color: var(--primary-color-950);
+  --selectable-hr-height: 1px;
+  --selectable-hr-color: var(--neutral-color-900);
+}
+
+.selectable {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--selectable-bg-color);
+  line-height: calc(var(--input-y-padding) * 2);
+  padding: var(--selectable-y-padding) var(--selectable-x-padding);
+  align-items: center;
+  position: relative;
+}
+
+.selectable:hover {
+  background-color: var(--selectable-hover-color);
+}
+
+.selectable input {
+  vertical-align: middle;
+  margin-right: var(--selectable-x-padding);
+}
+
+.selectable span {
+  display: block;
+}
+
+.selectable:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: var(--selectable-x-padding);
+  right: var(--selectable-x-padding);
+  height: var(--selectable-hr-height);
+  background-color: var(--selectable-hr-color);
+}
+
+/*# sourceMappingURL=selectable.css.map */

@@ -68,7 +68,7 @@
   font-size: var(--toast-icon-size);
 }
 
-.tosst-icon svg {
+.toast-icon svg {
   height: var(--toast-icon-size);
   width: auto;
 }

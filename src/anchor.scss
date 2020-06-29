@@ -1,0 +1,33 @@
+:root {
+  --anchor-normal-color: var(--primary-color-400);
+  --anchor-hover-color: var(--primary-color-600);
+  --anchor-active-color: var(--primary-color-800);
+  --anchor-visited-color: var(--primary-color-200);
+}
+
+a {
+  text-decoration: underline;
+
+  &:normal {
+    color: var(--anchor-normal-color);
+  }
+
+  &:visited {
+    color: var(--anchor-visited-color);
+  }
+
+  &:hover {
+    color: var(--anchor-hover-color);
+  }
+
+  &:active {
+    color: var(--anchor-active-color);
+  }
+
+  &.accent {
+    --anchor-normal-color: var(--accent-color-400);
+    --anchor-hover-color: var(--accent-color-600);
+    --anchor-active-color: var(--accent-color-800);
+    --anchor-visited-color: var(--accent-color-200);
+  }
+}

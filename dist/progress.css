@@ -11,11 +11,13 @@
   border-radius: var(--progress-border-radius);
   height: var(--progress-height);
 }
+
 .progress::-webkit-progress-bar {
   background-color: var(--progress-bg-color);
   border-radius: var(--progress-border-radius);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
+
 .progress::-webkit-progress-value {
   height: 100%;
   background-color: var(--progress-bar-color);
@@ -43,7 +45,7 @@
   --progress-bar-color: var(--confirm-color-400);
 }
 
-.progress-fixed {
+.progress.progress-fixed {
   position: fixed;
   left: 0;
   top: 0;
@@ -51,10 +53,11 @@
   height: calc(var(--progress-height) / 2);
   border-radius: 0;
 }
-.progress-fixed::-webkit-progress-bar,
-.progress-fixed::-webkit-progress-value {
+
+.progress.progress-fixed::-webkit-progress-bar, .progress.progress-fixed::-webkit-progress-value {
   border-radius: 0;
 }
 
-
 /* TODO: add mozilla pseudo */
+
+/*# sourceMappingURL=progress.css.map */

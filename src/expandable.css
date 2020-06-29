@@ -12,7 +12,8 @@
   transition-timing-function: var(--transition-easing);
   transition-duration: var(--transition-time);
 }
-.exp-input:checked + .exp-label + .exp-content {
+.exp-input:checked + .exp-label + .exp-content,
+.exp-content.open {
   max-height: calc(100vh + 0px);;
   opacity: 1;
 }

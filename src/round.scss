@@ -1,0 +1,49 @@
+@import "./lib/_constants.scss";
+@import "./lib/_functions.scss";
+
+:root {
+  --round-base: 0.75em;
+}
+
+[style*="-round:"] {
+  border-radius: calc(var(--round-base) * var(--round-val));
+}
+
+[style*="-round-t:"] {
+  border-radius:
+    calc(var(--round-base) * var(--round-t-val))
+    calc(var(--round-base) * var(--round-t-val))
+    0 0;
+}
+
+[style*="-round-b:"] {
+  border-radius:
+    0 0
+    calc(var(--round-base) * var(--round-b-val))
+    calc(var(--round-base) * var(--round-b-val));
+}
+
+[style*="-round-l:"] {
+  border-radius:
+    calc(var(--round-base) * var(--round-t-val))
+    0 0
+    calc(var(--round-base) * var(--round-t-val));
+}
+
+[style*="-round-r:"] {
+  border-radius:
+    0
+    calc(var(--round-base) * var(--round-b-val))
+    calc(var(--round-base) * var(--round-b-val))
+    0;
+}
+
+
+$variables:
+  "round",
+  "round-t",
+  "round-b",
+  "round-l",
+  "round-r";
+
+@include generate-media-var-selectors($variables, $media-ranges);
