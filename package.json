@@ -4,7 +4,7 @@
   "description": "Good Night CSS UI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
     "build": "node-sass src/ --output dist/ --output-style=expanded --source-map=true",
     "build:watch": "node-sass src/*.scss -o dist/ -w"
   },
