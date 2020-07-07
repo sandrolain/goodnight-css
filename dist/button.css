@@ -7,7 +7,7 @@
   --button-icon-color: var(--neutral-color-300);
   --button-normal-color: var(--neutral-color-400);
   --button-hover-color: var(--neutral-color-500);
-  --button-active-color: var(--neutral-color-800);
+  --button-active-color: var(--neutral-color-700);
   --button-screen-color: var(--neutral-color-950);
   --button-border-radius: 2px;
 }
@@ -38,7 +38,7 @@
   --button-icon-color: var(--primary-color-300);
   --button-normal-color: var(--primary-color-400);
   --button-hover-color: var(--primary-color-500);
-  --button-active-color: var(--primary-color-800);
+  --button-active-color: var(--primary-color-700);
   --button-screen-color: var(--primary-color-950);
 }
 
@@ -46,7 +46,7 @@
   --button-icon-color: var(--accent-color-300);
   --button-normal-color: var(--accent-color-400);
   --button-hover-color: var(--accent-color-500);
-  --button-active-color: var(--accent-color-800);
+  --button-active-color: var(--accent-color-700);
   --button-screen-color: var(--accent-color-950);
 }
 
@@ -54,7 +54,7 @@
   --button-icon-color: var(--critical-color-300);
   --button-normal-color: var(--critical-color-400);
   --button-hover-color: var(--critical-color-500);
-  --button-active-color: var(--critical-color-800);
+  --button-active-color: var(--critical-color-700);
   --button-screen-color: var(--critical-color-950);
 }
 
@@ -62,23 +62,17 @@
   --button-icon-color: var(--confirm-color-300);
   --button-normal-color: var(--confirm-color-400);
   --button-hover-color: var(--confirm-color-500);
-  --button-active-color: var(--confirm-color-800);
+  --button-active-color: var(--confirm-color-700);
   --button-screen-color: var(--confirm-color-950);
 }
 
 .btn:active,
-.btn:active .btn,
-.btn.active,
+.btn:active .btn, .btn.active,
 .btn.active .btn,
 .btn-input:checked + .btn,
 .btn-input:checked + .btn .btn {
   border-color: var(--button-active-color);
   background-color: var(--button-active-color);
-}
-
-.btn-icon {
-  width: calc(var(--button-line-height) + (var(--button-y-padding) * 2) + (var(--input-border-width) * 2));
-  padding: var(--button-y-padding) 0;
 }
 
 .btn-light {
@@ -163,6 +157,11 @@
   border-color: var(--button-screen-color);
   border-bottom-color: var(--button-icon-color);
   color: var(--button-icon-color);
+}
+
+.btn-icon {
+  width: calc(var(--button-line-height) + (var(--button-y-padding) * 2) + (var(--button-border-width) * 2));
+  padding: var(--button-y-padding) 0;
 }
 
 .btn > .btn-icon {
