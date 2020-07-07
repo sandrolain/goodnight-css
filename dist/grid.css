@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --grid-g: 20;
   --grid-w: 20;
   --grid-h: 20;

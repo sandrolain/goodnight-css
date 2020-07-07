@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --optimal-text-min: 20em;
   --optimal-text-max: 35em;
 }

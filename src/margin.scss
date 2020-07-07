@@ -1,7 +1,7 @@
 @import "./lib/_constants.scss";
 @import "./lib/_functions.scss";
 
-:root {
+:root, :host {
   --margin-base: 1em;
 }
 

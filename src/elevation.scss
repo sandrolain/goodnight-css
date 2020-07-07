@@ -1,7 +1,7 @@
 @import "./lib/_constants.scss";
 @import "./lib/_functions.scss";
 
-:root {
+:root, :host {
   --elevation-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -10,10 +10,12 @@
   --elevation-2: calc(var(--elevation) + 1);
   box-shadow: 0 calc(var(--elevation) * 1px)
     calc((var(--elevation) * var(--elevation) * 1px) / 2)
+    calc((var(--elevation) - 1) * -1px)
     var(--elevation-shadow-color),
     0 calc(var(--elevation-2) * 1px)
     calc(var(--elevation-2) * var(--elevation-2) * 1px)
-    var(--elevation-shadow-color);
+    calc((var(--elevation-2) - 1) * -1px)
+    var(--elevation-shadow-color)
 }
 
 $variables:

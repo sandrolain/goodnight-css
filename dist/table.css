@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --table-bg-color: var(--neutral-color-900);
   --table-td-bg-color: var(--neutral-color-999);
   --table-td-hover-color: var(--neutral-color-950);

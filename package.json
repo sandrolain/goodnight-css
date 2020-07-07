@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "node-sass src/ --output dist/ --output-style=expanded --source-map=true",
-    "build:watch": "node-sass src/*.scss -o dist/ -w"
+    "build:watch": "node-sass src/ --output dist/ --output-style=expanded --source-map=true -w"
   },
   "repository": {
     "type": "git",

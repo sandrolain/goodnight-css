@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --toast-border-width: 6px;
   --toast-bg-color: var(--neutral-color-950);
   --toast-border-color: var(--neutral-color-500);

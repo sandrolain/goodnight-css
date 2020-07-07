@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --wizard-bullet-size: 1.6em;
   --wizard-normal-bullet-color: var(--neutral-color-950);
   --wizard-normal-border-color: var(--neutral-color-600);

@@ -1,4 +1,4 @@
-:root {
+:root, :host {
   --selectable-y-padding: 0.50em;
   --selectable-x-padding: 1.25em;
   --selectable-bg-color: var(--neutral-color-999);
@@ -21,12 +21,13 @@
   background-color: var(--selectable-hover-color);
 }
 
-.selectable input {
+.selectable > input {
   vertical-align: middle;
   margin-right: var(--selectable-x-padding);
 }
 
-.selectable span {
+.selectable .selectable-label,
+.selectable > span {
   display: block;
 }
 

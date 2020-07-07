@@ -1,5 +1,5 @@
 /* Color Scheme */
-:root {
+:root, :host {
   --neutral-color-hue: 240;
   --neutral-color-sat: 10%;
   --neutral-color-000: black;
@@ -78,7 +78,7 @@
   --confirm-color-950: hsl(calc(var(--confirm-color-hue) + 25), var(--confirm-color-sat), 95%);
 }
 
-:root {
+:root, :host {
   --opacity-000: 0;
   --opacity-100: 0.1;
   --opacity-200: 0.2;
@@ -93,7 +93,7 @@
 }
 
 /* Sizes */
-:root {
+:root, :host {
   --size-000: 0px;
   --size-100: 12px;
   --size-200: 14px;
@@ -108,19 +108,19 @@
 }
 
 /* Animations */
-:root {
+:root, :host {
   --transition-time: 200ms;
   --transition-easing: ease;
 }
 
 /* Typo */
-:root {
+:root, :host {
   --font-family-sans: Verdana, Geneva, Tahoma, sans-serif;
   --font-family-mono: monospace;
 }
 
 /* Calc */
-:root {
+:root, :host {
   --golden-ratio: 1.61803;
   --pi: 3.14159;
 }
