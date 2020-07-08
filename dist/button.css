@@ -8,6 +8,7 @@
   --button-normal-color: var(--neutral-color-400);
   --button-hover-color: var(--neutral-color-500);
   --button-active-color: var(--neutral-color-700);
+  --button-disabled-color: var(--neutral-color-800);
   --button-screen-color: var(--neutral-color-950);
   --button-border-radius: 2px;
 }
@@ -39,6 +40,7 @@
   --button-normal-color: var(--primary-color-400);
   --button-hover-color: var(--primary-color-500);
   --button-active-color: var(--primary-color-700);
+  --button-disabled-color: var(--primary-color-800);
   --button-screen-color: var(--primary-color-950);
 }
 
@@ -47,6 +49,7 @@
   --button-normal-color: var(--accent-color-400);
   --button-hover-color: var(--accent-color-500);
   --button-active-color: var(--accent-color-700);
+  --button-disabled-color: var(--accent-color-800);
   --button-screen-color: var(--accent-color-950);
 }
 
@@ -55,7 +58,17 @@
   --button-normal-color: var(--critical-color-400);
   --button-hover-color: var(--critical-color-500);
   --button-active-color: var(--critical-color-700);
+  --button-disabled-color: var(--critical-color-800);
   --button-screen-color: var(--critical-color-950);
+}
+
+.btn.warning {
+  --button-icon-color: var(--warning-color-300);
+  --button-normal-color: var(--warning-color-400);
+  --button-hover-color: var(--warning-color-500);
+  --button-active-color: var(--warning-color-700);
+  --button-disabled-color: var(--warning-color-800);
+  --button-screen-color: var(--warning-color-950);
 }
 
 .btn.confirm {
@@ -63,6 +76,7 @@
   --button-normal-color: var(--confirm-color-400);
   --button-hover-color: var(--confirm-color-500);
   --button-active-color: var(--confirm-color-700);
+  --button-disabled-color: var(--confirm-color-800);
   --button-screen-color: var(--confirm-color-950);
 }
 
@@ -73,6 +87,13 @@
 .btn-input:checked + .btn .btn {
   border-color: var(--button-active-color);
   background-color: var(--button-active-color);
+}
+
+.btn:disabled,
+.btn:disabled .btn, .btn.disabled,
+.btn.disabled .btn {
+  border-color: var(--button-disabled-color);
+  background-color: var(--button-disabled-color);
 }
 
 .btn-light {
